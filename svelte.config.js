@@ -12,7 +12,7 @@ const config = {
 		}),
 
     paths: {
-      base: '/rr_inventory',
+      base: '/qr-code-creator',
     }
   }
 };
