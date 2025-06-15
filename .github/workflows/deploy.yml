@@ -28,12 +28,12 @@ jobs:
 
       - name: Log Environment Variables
         run: |
-          # echo "PUBLIC_SUPABASE_URL: $PUBLIC_SUPABASE_URL"
-          # echo "PUBLIC_SUPABASE_ANON_KEY: $PUBLIC_SUPABASE_ANON_KEY"
+          echo "PUBLIC_SUPABASE_URL: $PUBLIC_SUPABASE_URL"
+          echo "PUBLIC_SUPABASE_ANON_KEY: $PUBLIC_SUPABASE_ANON_KEY"
 
       - name: build
-        # env:
-          # BASE_PATH: '/${{ github.event.repository.name }}'
+        env:
+          BASE_PATH: '/${{ github.event.repository.name }}'
           # VITE_PUBLIC_SUPABASE_URL: ${{ secrets.PUBLIC_SUPABASE_URL }}
           # VITE_PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.PUBLIC_SUPABASE_ANON_KEY }}
 
